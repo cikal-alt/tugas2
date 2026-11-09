@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        body{
+            background-color: black;
+        }
+        
+        .kontainer{
+            
+            width: 80%;
+            height: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+            border: 4px solid pink
+        }
+        
+        .header{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(0, 0, 0);
+            border-bottom: 4px solid pink;
+            
+        }
+        
+        .header h1{
+            color: wheat;
+            text-align: center;
+        }
+        
+        .isi{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            border-bottom: 4px solid pink;
+            
+        }
+        
+        
+        .kiri{
+            width: 20%;
+            height: 100%;
+            color: wheat;
+            background-color: #2d2d44;
+            border-right: 4px solid pink;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .isikiri{
+            overflow-y: auto;
+            height: 90%;
+        }
+        
+        .isikiri::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        .isikiri::-webkit-scrollbar-track {
+            background: #1a1a2e;
+            border-radius: 10px;
+        }
+        
+        .isikiri::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #ff8fb1, #c2185b);
+            border-radius: 10px;
+            border: 2px solid #1a1a2e;
+        }
+        
+        .isikiri::-webkit-scrollbar-thumb:hover {
+            background: #ff8fb1;
+        }
+        
+        
+        .foto{
+            width: 100%;
+            text-align: center;
+        }
+        
+        
+        img{
+            width: 200px;
+            border-radius: 10px;
+        }
+        
+        .kanan{
+            width: 80%;
+            height: 100%;
+        }
+        
+        .judul1{
+            height: 10%;
+            background: #2d2d44;
+            border-bottom: 2px solid black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .judul2{
+            height: 10%;
+            background: #2d2d44;
+            border-bottom: 2px solid black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .kanan2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            background: #2d2d44;
+            text-align: center;
+            height: 90%;
+        }
+        
+        .musik{
+            justify-content: space-evenly;
+            background: black;
+            color: white;
+            text-align: center;
+            margin: auto;
+            border-radius: 20px;
+            padding: 10px;
+            border: 2px solid pink;
+        }
+        
+        .judul2,.judul1 h2{
+            margin: 0;
+            text-align: center;
+            color: wheat;
+        }
+        
+        .footer{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .sosmed{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: wheat;
+            text-decoration: none;
+            font-family: sans-serif;
+            transition: color 0.3s, transform 0.3s;
+        }
+        
+        .sosmed i{
+            font-size: 28px;
+        }
+        
+        .sosmed:hover{
+            color: #ff8fb1;
+            transform: scale(1.08);
+        }
+        
+        @media(max-width:768px){
+            .musik{width: 45%;}
+            .musik audio{width: 100%;}
+            .foto{font-size: 10px;}
+            .foto img{width: 100px;}
+        }
+        
+        @media(max-width:425px){
+            .kontainer{height: 100%;}
+            .isi{flex-direction: column;height: 70%;}
+            .kiri{flex-direction: column;width: 100%;border: 0;}
+            .isikiri{display: flex;flex-direction: row;}
+            .foto img{width: 100px;height: 100px;}
+            .foto h2{font-size: 10px;}
+            .kanan{flex-direction: column;width: auto;height: auto;}
+            .musik{width: 100%;}
+            .musik audio{width: 100%;}
+            .footer{height: 20px;}
+            .footer a{font-size: 8px;}
+            .footer i{font-size: 10px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kontainer">
+        <div class="header">
+            <h1>MY PLAYLIST</h1>
+        </div>
+        <div class="isi">
+            <div class="kiri">
+                <div class="judul1">
+                    <h2>The Artists</h2>
+                </div>
+                <div class="isikiri">
+                    <div class="foto">
+                        <h2>Lana Del Rey</h2>
+                        <img src="gambar/Reading24_NME_AFORD_LANADELREY-629971-800x508.jpg">
+                    </div>
+                    <div class="foto">
+                        <h2>Sheila On 7</h2>
+                        <img src="gambar/745x489-img-46182-sheila-on-7.jpg">
+                    </div>
+                    <div class="foto">
+                        <h2>Tulus</h2>
+                        <img src="gambar/tulus.jpg">
+                    </div>
+                    <div class="foto">
+                        <h2>Djo</h2>
+                        <img src="gambar/M_djo_041725.jpg">
+                    </div>
+                    <div class="foto">
+                        <h2>Lord Huron</h2>
+                        <img src="gambar/Lord-Huron.jpg">
+                    </div>
+                    <div class="foto">
+                        <h2>The Weeknd</h2>
+                        <img src="gambar/the-weeknd-blinding-lights-record.webp">
+                    </div>
+                </div>           
+            </div>
+            
+            <div class="kanan">
+                <div class="judul2">
+                    <h2>The Songs</h2>
+                </div>
+                <div class="kanan2">
+                    <div class="musik">
+                        <p>Lana Del Rey - Young and Beautiful</p>
+                        <audio controls src="musik/lagu1.mp3"></audio>
+                    </div>
+                    <div class="musik">
+                        <p>Sheila On 7 - Itu Aku</p>
+                        <audio controls src="musik/lagu2.mp3"></audio>
+                    </div>
+                    <div class="musik">
+                        <p>Tulus - Jangan Cintai Aku Apa Adanya</p>
+                        <audio controls src="musik/lagu3.mp3"></audio>
+                    </div>   
+                    <div class="musik">
+                        <p>Djo - End Of Beginning</p>
+                        <audio controls src="musik/lagu4.mp3"></audio>
+                    </div>   
+                    <div class="musik">
+                        <p>Lord Huron - The Night We Met</p>
+                        <audio controls src="musik/lagu5.mp3"></audio>
+                    </div>   
+                    <div class="musik">
+                        <p>The Weeknd - Is There Someone Else</p>
+                        <audio controls src="musik/lagu6.mp3"></audio>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="color: wheat;text-align: center;">
+            <a href="https://instagram.com/cikaaaalllll" target="_blank" class="sosmed" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@cikaaaalllll</span>
+            </a>
+            <a href="https://instagram.com/imsummer78" target="_blank" class="sosmed" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@imsummer78</span>
+            </a>
+            <a href="https://tiktok.com/@Lateflaz" target="_blank" class="sosmed" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>@Lateflaz</span>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>O
